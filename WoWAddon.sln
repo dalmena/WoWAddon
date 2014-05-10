@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWAddon", "WoWAddon\WoWAddon.csproj", "{4C88636C-34AF-4A46-B2CF-EE26AD73BD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deployer", "Deployer\Deployer.csproj", "{80A8D887-CD68-43DA-9B3F-3E60F1F86D7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C88636C-34AF-4A46-B2CF-EE26AD73BD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C88636C-34AF-4A46-B2CF-EE26AD73BD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C88636C-34AF-4A46-B2CF-EE26AD73BD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C88636C-34AF-4A46-B2CF-EE26AD73BD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A8D887-CD68-43DA-9B3F-3E60F1F86D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A8D887-CD68-43DA-9B3F-3E60F1F86D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A8D887-CD68-43DA-9B3F-3E60F1F86D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A8D887-CD68-43DA-9B3F-3E60F1F86D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

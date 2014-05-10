@@ -1,0 +1,4 @@
+C:\WoWAddon\WoWAddon\bin\WoWAddon.dll
+C:\WoWAddon\WoWAddon\bin\WoWAddon.pdb
+C:\WoWAddon\WoWAddon\obj\Debug\WoWAddon.dll
+C:\WoWAddon\WoWAddon\obj\Debug\WoWAddon.pdb

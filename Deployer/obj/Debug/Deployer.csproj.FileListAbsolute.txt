@@ -1,0 +1,5 @@
+C:\WoWAddon\Deployer\bin\Debug\Deployer.exe.config
+C:\WoWAddon\Deployer\bin\Debug\Deployer.exe
+C:\WoWAddon\Deployer\bin\Debug\Deployer.pdb
+C:\WoWAddon\Deployer\obj\Debug\Deployer.exe
+C:\WoWAddon\Deployer\obj\Debug\Deployer.pdb

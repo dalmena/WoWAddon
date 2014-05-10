@@ -2,3 +2,8 @@ C:\WoWAddon\WoWAddon\bin\WoWAddon.dll
 C:\WoWAddon\WoWAddon\bin\WoWAddon.pdb
 C:\WoWAddon\WoWAddon\obj\Debug\WoWAddon.dll
 C:\WoWAddon\WoWAddon\obj\Debug\WoWAddon.pdb
+C:\dev\WoWAddon\WoWAddon\bin\WoWAddon.dll
+C:\dev\WoWAddon\WoWAddon\bin\WoWAddon.pdb
+C:\dev\WoWAddon\WoWAddon\obj\Debug\WoWAddon.csprojResolveAssemblyReference.cache
+C:\dev\WoWAddon\WoWAddon\obj\Debug\WoWAddon.dll
+C:\dev\WoWAddon\WoWAddon\obj\Debug\WoWAddon.pdb

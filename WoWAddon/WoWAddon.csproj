@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addon\themeless\data\ThemeLessSummaryData.js" />
+    <Content Include="addon\themeless\storage\ThemeLessStorage.js" />
+    <Content Include="addon\themeless\ThemeLessAddon.js" />
+    <Content Include="addon\themeless\transaction\ApplyThemeLessTransaction.js" />
+    <Content Include="addon\themeless\transaction\CreateNewThemeLessSummaryTransaction.js" />
+    <Content Include="addon\themeless\view\ThemeLessSummaryViewFactory.js" />
     <Content Include="addon\timeleft\data\AuctionChangeTimeLeftData.js" />
     <Content Include="addon\timeleft\data\AuctionDuration.js" />
     <Content Include="addon\timeleft\data\AuctionTime.js" />
@@ -70,6 +76,7 @@
     <Content Include="addon\timeleft\view\TimeLeftViewFactory.js" />
     <Content Include="config\client\AllAddonClient.js" />
     <Content Include="config\server\AllAddonServer.js" />
+    <Content Include="data\SummaryData.js" />
     <Content Include="mapping\data\AuctionItem.js" />
     <Content Include="mapping\mapper\AuctionItemMapper.js" />
     <Content Include="mapping\transaction\AuctionMappingTransaction.js" />
@@ -83,7 +90,8 @@
     <Content Include="storage\SessionStorage.js" />
     <Content Include="storage\Storage.js" />
     <Content Include="storage\WebStorableContainer.js" />
-    <Content Include="theme\work\theme.js" />
+    <Content Include="transaction\CreateNewSummaryTransaction.js" />
+    <Content Include="view\SummaryViewFactory.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

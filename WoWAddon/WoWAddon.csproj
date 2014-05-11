@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addon\fastbid\FastBidAddon.js" />
+    <Content Include="addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js" />
     <Content Include="addon\themeless\data\ThemeLessSummaryData.js" />
     <Content Include="addon\themeless\storage\ThemeLessStorage.js" />
     <Content Include="addon\themeless\ThemeLessAddon.js" />

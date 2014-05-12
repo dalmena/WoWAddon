@@ -3,5 +3,6 @@ $(function(){
         new TimeLeftAddon().execute();
         new ThemeLessAddon().execute();
         new FastBidAddon().execute();
+        new UnitPriceAddon().execute();
     }
 });

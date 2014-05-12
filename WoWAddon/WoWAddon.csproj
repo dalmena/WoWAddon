@@ -76,6 +76,11 @@
     <Content Include="addon\timeleft\transaction\AuctionTimeTransaction.js" />
     <Content Include="addon\timeleft\transaction\DurationTimerTransaction.js" />
     <Content Include="addon\timeleft\view\TimeLeftViewFactory.js" />
+    <Content Include="addon\unitprice\transaction\ChangeResetFormForCreateAuction.js" />
+    <Content Include="addon\unitprice\transaction\CreateRefreshUnitPriceEventTransaction.js" />
+    <Content Include="addon\unitprice\transaction\CreateUnitPriceForSellTransaction.js" />
+    <Content Include="addon\unitprice\UnitPriceAddon.js" />
+    <Content Include="addon\unitprice\view\UnitPriceViewFactory.js" />
     <Content Include="config\client\AllAddonClient.js" />
     <Content Include="config\server\AllAddonServer.js" />
     <Content Include="data\SummaryData.js" />
@@ -93,6 +98,7 @@
     <Content Include="storage\Storage.js" />
     <Content Include="storage\WebStorableContainer.js" />
     <Content Include="transaction\CreateNewSummaryTransaction.js" />
+    <Content Include="view\MoneyViewFactory.js" />
     <Content Include="view\SummaryViewFactory.js" />
     <Content Include="Web.config" />
   </ItemGroup>

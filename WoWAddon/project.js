@@ -5,6 +5,7 @@
 // @description  It is a package of addons for World of Warcraft web auction house.
 // @match      https://us.battle.net/wow/en/vault/character/auction/*
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\SummaryViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\view\MoneyViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\CreateNewSummaryTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\storage\WebStorableContainer.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\storage\Storage.js
@@ -19,6 +20,11 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\mapper\AuctionItemMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\data\AuctionItem.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\data\SummaryData.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\view\UnitPriceViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\transaction\CreateUnitPriceForSellTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\transaction\CreateRefreshUnitPriceEventTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\transaction\ChangeResetFormForCreateAuction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\UnitPriceAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\timeleft\view\TimeLeftViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\timeleft\transaction\DurationTimerTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\timeleft\transaction\AuctionTimeTransaction.js

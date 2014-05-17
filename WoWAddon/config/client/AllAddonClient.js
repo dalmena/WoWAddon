@@ -4,5 +4,6 @@ $(function(){
         new ThemeLessAddon().execute();
         new FastBidAddon().execute();
         new UnitPriceAddon().execute();
+        new SearchAllAddon().execute();
     }
 });

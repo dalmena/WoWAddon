@@ -42,8 +42,9 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\themeless\storage\ThemeLessStorage.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\themeless\data\ThemeLessSummaryData.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\themeless\ThemeLessAddon.js
-// @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\view\SearchAllFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\view\SearchAllViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\transaction\SearchAllFilterTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\transaction\SearchAllAppendFormTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\mapper\SearchAllMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\SearchAllAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js

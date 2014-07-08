@@ -45,7 +45,9 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\view\SearchAllViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\transaction\SearchAllFilterTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\transaction\SearchAllAppendFormTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\storage\SearchAllFilterStorage.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\mapper\SearchAllMapper.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\data\SearchAllFilter.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\SearchAllAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\FastBidAddon.js

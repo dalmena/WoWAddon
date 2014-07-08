@@ -8,3 +8,4 @@ C:\dev\WoWAddon\Deployer\bin\Debug\Deployer.exe
 C:\dev\WoWAddon\Deployer\bin\Debug\Deployer.pdb
 C:\dev\WoWAddon\Deployer\obj\Debug\Deployer.exe
 C:\dev\WoWAddon\Deployer\obj\Debug\Deployer.pdb
+C:\dev\WoWAddon\Deployer\obj\Debug\Deployer.csprojResolveAssemblyReference.cache

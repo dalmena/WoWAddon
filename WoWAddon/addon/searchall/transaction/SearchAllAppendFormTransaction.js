@@ -1,8 +1,13 @@
 ﻿var SearchAllAppendFormTransaction = function () {
+    this.storage = new SearchAllFilterStorage();
+    this.filterTransaction = new SearchAllFilterTransaction(this.storage);
+
     this.priceDiff = SearchPercentComboViewFactory.create('Price diff');
     this.apply = SearchButtonViewFactory.create('APPLY', true);
     this.clear = SearchButtonViewFactory.create('Clear', false);
-    this.filterTransaction = new SearchAllFilterTransaction();
+
+    var ratio = this.storage.get('search-all-filter', new SearchAllFilter(0.1)).ratio;
+    SearchPercentComboViewFactory.setValue(this.priceDiff, ratio);
 }
 
 SearchAllAppendFormTransaction.prototype.execute = function () {

@@ -6,6 +6,7 @@
 // @match      https://us.battle.net/wow/en/vault/character/auction/*
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\SummaryViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\MoneyViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\transaction\LoadPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\CreateNewSummaryTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\storage\WebStorableContainer.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\storage\Storage.js
@@ -17,6 +18,7 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\notification\storage\AuctionNotificationStorage.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\notification\data\AuctionNotification.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\transaction\AuctionMappingTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\mapping\transaction\AuctionDocumentMappingTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\mapper\AuctionItemMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\data\AuctionItem.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\data\SummaryData.js

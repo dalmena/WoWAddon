@@ -93,6 +93,7 @@
     <Content Include="data\SummaryData.js" />
     <Content Include="mapping\data\AuctionItem.js" />
     <Content Include="mapping\mapper\AuctionItemMapper.js" />
+    <Content Include="mapping\transaction\AuctionDocumentMappingTransaction.js" />
     <Content Include="mapping\transaction\AuctionMappingTransaction.js" />
     <Content Include="notification\data\AuctionNotification.js" />
     <Content Include="notification\storage\AuctionNotificationStorage.js" />
@@ -105,6 +106,7 @@
     <Content Include="storage\Storage.js" />
     <Content Include="storage\WebStorableContainer.js" />
     <Content Include="transaction\CreateNewSummaryTransaction.js" />
+    <Content Include="transaction\LoadPageTransaction.js" />
     <Content Include="view\MoneyViewFactory.js" />
     <Content Include="view\SummaryViewFactory.js" />
     <Content Include="Web.config" />

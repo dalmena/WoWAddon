@@ -1,6 +1,6 @@
 ﻿var CreateNewThemeLessSummaryTransaction = function (summary) {
     this.summary = summary;
-    this.view 
+    this.view;
 }
 
 CreateNewThemeLessSummaryTransaction.prototype.execute = function () {

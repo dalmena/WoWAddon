@@ -52,9 +52,14 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\mapper\SearchAllMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\data\SearchAllFilter.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\SearchAllAddon.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\view\PageRefreshSummaryViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshNotMappedAuctionItem.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshAuctionItemFromAnotherDocumentTransaction.js
-// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshAuctionFromCurrentPage.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshAuctionFromCurrentPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\KeepRefreshingAuctionFromCurrentPageTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\CreateNewPageRefreshSummaryTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\storage\PageRefreshStorage.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\data\PageRefreshSummaryData.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\PageRefreshAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\FastBidAddon.js

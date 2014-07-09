@@ -6,6 +6,7 @@ AuctionItemMapper.prototype.map = function(view){
     item.code = view.attr('id').replace('auction-', '');
     item.name = view.find('.item a strong').text();
     item.timeLeft = view.find('.time span').text();
+    item.category = view.parent().parent().parent().parent().attr('id');
     
     return item;
 }    

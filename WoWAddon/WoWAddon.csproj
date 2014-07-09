@@ -59,6 +59,11 @@
   <ItemGroup>
     <Content Include="addon\fastbid\FastBidAddon.js" />
     <Content Include="addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js" />
+    <Content Include="addon\pagerefresh\PageRefreshAddon.js" />
+    <Content Include="addon\pagerefresh\transaction\KeepRefreshingAuctionFromCurrentPageTransaction.js" />
+    <Content Include="addon\pagerefresh\transaction\RefreshAuctionFromCurrentPage.js" />
+    <Content Include="addon\pagerefresh\transaction\RefreshAuctionItemFromAnotherDocumentTransaction.js" />
+    <Content Include="transaction\RefreshCurrentPageTransaction.js" />
     <Content Include="addon\searchall\data\SearchAllFilter.js" />
     <Content Include="addon\searchall\mapper\SearchAllMapper.js" />
     <Content Include="addon\searchall\SearchAllAddon.js" />

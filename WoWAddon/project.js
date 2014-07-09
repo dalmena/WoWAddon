@@ -6,6 +6,7 @@
 // @match      https://us.battle.net/wow/en/vault/character/auction/*
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\SummaryViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\MoneyViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\transaction\RefreshCurrentPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\LoadPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\CreateNewSummaryTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\storage\WebStorableContainer.js
@@ -51,6 +52,10 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\mapper\SearchAllMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\data\SearchAllFilter.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\searchall\SearchAllAddon.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshAuctionItemFromAnotherDocumentTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\RefreshAuctionFromCurrentPage.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\transaction\KeepRefreshingAuctionFromCurrentPageTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\PageRefreshAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\FastBidAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\config\client\AllAddonClient.js

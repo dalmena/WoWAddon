@@ -18,6 +18,7 @@ KeepRefreshingAuctionFromCurrentPageTransaction.prototype.keepRefreshing = funct
 
     setTimeout(function () {
         that.refreshCurrentAuctionsTransaction.execute();
+        AuctionRefreshEvents.fire(AuctionRefreshEvents.onRefresh);
     }, refreshTime);
 }
 

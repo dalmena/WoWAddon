@@ -8,6 +8,10 @@ AuctionItemMapper.prototype.map = function(view){
     item.timeLeft = view.find('.time span').text();
     item.category = view.parent().parent().parent().parent().attr('id');
     
+    if (!item.category) {
+        item.category = view.parent().parent().parent().parent().attr('class');
+    }
+
     return item;
 }    
 

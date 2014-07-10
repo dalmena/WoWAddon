@@ -8,11 +8,13 @@ RefreshAuctionItemFromAnotherDocumentTransaction.prototype.execute = function ()
     var category = this.newAuctionItem.category;
 
     var oldAuctionDOM = $('tr[id*="auction-' + code + '"]').filter(function () {        
-        return $(this).parent().parent().parent().parent().attr('id') == category;
+        var container = $(this).parent().parent().parent().parent();
+        return container.attr('id') == category || container.attr('class') == category;
     });
     
     var newAuctionDOM = $('tr[id*="auction-' + code + '"]', this.newDocument).filter(function () {
-        return $(this).parent().parent().parent().parent().attr('id') == category;
+        var container = $(this).parent().parent().parent().parent();
+        return container.attr('id') == category || container.attr('class') == category;
     });
 
     if (oldAuctionDOM.length > 0 && newAuctionDOM.length > 0) {
@@ -20,10 +22,10 @@ RefreshAuctionItemFromAnotherDocumentTransaction.prototype.execute = function ()
         console.log('refreshed (replace)' + code);
     }
     else if (newAuctionDOM.length > 0) {
-        var container = $('.' + category);
+        var container = $('#' + category);
 
         if (container.length == 0) {
-            container = $('#' + category);
+            container = $('.' + category.replace(' ', '.'));
         }
 
         container.find('.table tbody').append(newAuctionDOM);

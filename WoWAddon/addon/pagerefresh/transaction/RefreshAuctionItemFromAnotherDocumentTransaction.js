@@ -18,6 +18,7 @@ RefreshAuctionItemFromAnotherDocumentTransaction.prototype.execute = function ()
     });
 
     if (oldAuctionDOM.length > 0 && newAuctionDOM.length > 0) {
+        newAuctionDOM.css('display', oldAuctionDOM.css('display'));
         oldAuctionDOM.replaceWith(newAuctionDOM);
         console.log('refreshed (replace)' + code);
     }

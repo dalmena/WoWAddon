@@ -1,5 +1,5 @@
-﻿var PageRefreshStorage = function () { }
+﻿var AuctionRefreshStorage = function () { }
 
-PageRefreshStorage.prototype = new IndexableStorage('page-refresh', new SessionStorage())
+AuctionRefreshStorage.prototype = new IndexableStorage('auction-refresh', new SessionStorage())
 
-unsafeWindow.PageRefreshStorage = PageRefreshStorage;
+unsafeWindow.AuctionRefreshStorage = AuctionRefreshStorage;

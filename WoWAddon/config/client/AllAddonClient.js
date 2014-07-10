@@ -5,6 +5,6 @@ $(function(){
         new FastBidAddon().execute();
         new UnitPriceAddon().execute();
         new SearchAllAddon().execute();
-        new PageRefreshAddon().execute();
+        new AuctionRefreshAddon().execute();
     }
 });

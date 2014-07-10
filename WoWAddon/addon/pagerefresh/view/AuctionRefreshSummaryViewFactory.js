@@ -1,9 +1,9 @@
-var PageRefreshSummaryViewFactory = {}
+var AuctionRefreshSummaryViewFactory = {}
 
-PageRefreshSummaryViewFactory.DEFAULT_CLASS = 'summary-page-refresh';
+AuctionRefreshSummaryViewFactory.DEFAULT_CLASS = 'summary-page-refresh';
 
-PageRefreshSummaryViewFactory.create = function (refreshTimeValue) {
-    var view = $('<table>').attr('class', PageRefreshSummaryViewFactory.DEFAULT_CLASS);
+AuctionRefreshSummaryViewFactory.create = function (refreshTimeValue) {
+    var view = $('<table>').attr('class', AuctionRefreshSummaryViewFactory.DEFAULT_CLASS);
     var col1 = $('<col>').attr('width', '25%');
     var col2 = $('<col>').attr('width', '25%');
     var col3 = $('<col>').attr('width', '50%');
@@ -41,11 +41,11 @@ PageRefreshSummaryViewFactory.create = function (refreshTimeValue) {
     return view;
 }
 
-PageRefreshSummaryViewFactory.format = function (view, refreshTime) {
+AuctionRefreshSummaryViewFactory.format = function (view, refreshTime) {
     $('.summary-page-refresh-delay', view).val(refreshTime);
 }
 
-PageRefreshSummaryViewFactory.onDelayChange = function (view, response) {
+AuctionRefreshSummaryViewFactory.onDelayChange = function (view, response) {
     var text = $('.summary-page-refresh-delay', view);
 
     text.change(function () {
@@ -53,4 +53,4 @@ PageRefreshSummaryViewFactory.onDelayChange = function (view, response) {
     });
 }
 
-unsafeWindow.PageRefreshSummaryViewFactory = PageRefreshSummaryViewFactory;
+unsafeWindow.AuctionRefreshSummaryViewFactory = AuctionRefreshSummaryViewFactory;

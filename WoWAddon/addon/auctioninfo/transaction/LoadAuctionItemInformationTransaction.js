@@ -2,7 +2,7 @@
     this.itemTypeCode = itemTypeCode;
     this.callback = callback;
     this.storage = storage;
-    this.query = query;
+    this.query = query; 
 }
 
 LoadAuctionItemInformationTransaction.prototype.execute = function () {

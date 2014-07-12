@@ -8,11 +8,11 @@ ExtractLoadedAuctionItemInformationTransaction.prototype.execute = function () {
     var auction = new AuctionInfo();    
     auction.itemTypeCode = this.itemTypeCode;
     auction.query = this.query;
-    auction.price = this.extractPrice();
+    auction.sellPrice = this.extractSellPrice();
     return auction;
 }
 
-ExtractLoadedAuctionItemInformationTransaction.prototype.extractPrice = function () {
+ExtractLoadedAuctionItemInformationTransaction.prototype.extractSellPrice = function () {
     var gold = $('.icon-gold', this.document);
     var silver = $('.icon-silver', this.document);
     var copper = $('.icon-copper', this.document);
@@ -27,8 +27,5 @@ ExtractLoadedAuctionItemInformationTransaction.prototype.extractPrice = function
 
     return price;
 }
-
-
-
 
 unsafeWindow.ExtractLoadedAuctionItemInformationTransaction = ExtractLoadedAuctionItemInformationTransaction;

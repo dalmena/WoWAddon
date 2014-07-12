@@ -12,4 +12,11 @@ SyncArray.prototype.complete = function (completeCallback) {
     return this;
 }
 
+Object.defineProperty(Array.prototype, 'sync', {
+    enumerable: false,
+    value: function () {
+        return new SyncArray(this);
+    }
+});
+
 unsafeWindow.SyncArray = SyncArray;

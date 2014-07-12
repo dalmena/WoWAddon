@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addon\auctioninfo\data\AuctionInfo.js" />
+    <Content Include="addon\auctioninfo\storage\AuctionInfoStorage.js" />
+    <Content Include="addon\auctioninfo\transaction\AutoRetrieveAuctionInformation.js" />
+    <Content Include="addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js" />
+    <Content Include="addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js" />
+    <Content Include="addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js" />
     <Content Include="addon\fastbid\FastBidAddon.js" />
     <Content Include="addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js" />
     <Content Include="addon\pagerefresh\AuctionRefreshAddon.js" />
@@ -70,6 +76,7 @@
     <Content Include="addon\pagerefresh\transaction\RefreshNotMappedAuctionItem.js" />
     <Content Include="addon\pagerefresh\transaction\WatchAuctionRefreshTransaction.js" />
     <Content Include="addon\pagerefresh\view\AuctionRefreshSummaryViewFactory.js" />
+    <Content Include="data\SyncArray.js" />
     <Content Include="transaction\RefreshCurrentPageTransaction.js" />
     <Content Include="addon\searchall\data\SearchAllFilter.js" />
     <Content Include="addon\searchall\mapper\SearchAllMapper.js" />
@@ -119,6 +126,7 @@
     <Content Include="storage\WebStorableContainer.js" />
     <Content Include="transaction\CreateNewSummaryTransaction.js" />
     <Content Include="transaction\LoadPageTransaction.js" />
+    <Content Include="transaction\SyncForEachTransaction.js" />
     <Content Include="view\MoneyViewFactory.js" />
     <Content Include="view\SummaryViewFactory.js" />
     <Content Include="Web.config" />

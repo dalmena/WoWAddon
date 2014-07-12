@@ -6,6 +6,7 @@
 // @match      https://us.battle.net/wow/en/vault/character/auction/*
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\SummaryViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\view\MoneyViewFactory.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\transaction\SyncForEachTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\RefreshCurrentPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\LoadPageTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\transaction\CreateNewSummaryTransaction.js
@@ -22,6 +23,7 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\transaction\AuctionDocumentMappingTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\mapper\AuctionItemMapper.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\mapping\data\AuctionItem.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\data\SyncArray.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\data\SummaryData.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\view\UnitPriceViewFactory.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\unitprice\transaction\CreateUnitPriceForSellTransaction.js
@@ -65,6 +67,12 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\AuctionRefreshAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\FastBidAddon.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\AutoRetrieveAuctionInformation.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\storage\AuctionInfoStorage.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\data\AuctionInfo.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\config\client\AllAddonClient.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\config\server\AllAddonServer.js
 // @copyright  2014+, miguelcjalmeida@gmail.com

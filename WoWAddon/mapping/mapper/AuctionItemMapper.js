@@ -7,7 +7,9 @@ AuctionItemMapper.prototype.map = function(view){
     item.name = view.find('.item a strong').text();
     item.timeLeft = view.find('.time span').text();
     item.category = view.parent().parent().parent().parent().attr('id');
-    
+    item.itemTypeCode = view.find('.item a').attr('href').replace(/[\w\W]*\/(\d)/, '$1');
+    item.query = view.find('.item a').attr('data-item');
+
     if (!item.category) {
         item.category = view.parent().parent().parent().parent().attr('class');
     }

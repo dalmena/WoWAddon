@@ -2,6 +2,13 @@
     this.storage = storage;
 }
 
+SearchAllFilterTransaction.prototype.refresh = function () {
+    console.log("refreshing: " + $('#smartFilterApplyCheckBox').is(':checked'));
+    if ($('#smartFilterApplyCheckBox').is(':checked')) {
+        this.execute();
+    }
+}
+
 SearchAllFilterTransaction.prototype.execute = function () {
 
     var minRatio = $('#smartPriceDiff').val();

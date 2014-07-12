@@ -1,5 +1,6 @@
 ﻿var SearchButtonViewFactory = {}
 var SearchPercentComboViewFactory = {}
+var SearchCheckBoxViewFactory = {}
 
 SearchButtonViewFactory.create = function (title, isConfirmButton) {
     var buttonClass = isConfirmButton ? 'button1' : 'button2';
@@ -25,7 +26,15 @@ SearchPercentComboViewFactory.create = function (title) {
                         + '<option value="0.8">80%</option>'
                         + '<option value="0.9">90%</option>'
                         + '<option value="1.0">100%</option>'
+                        + '<option value="0">Bid Only</option>'
                     + '</select>'
+            + '</div>');
+}
+
+SearchCheckBoxViewFactory.create = function (title) {
+    return $('<div class="column">'
+                 + '<label for="smartFilterApplyCheckBox">' + title + '</label>'
+                 + '<input type="checkbox" id="smartFilterApplyCheckBox" name="smartFilterApplyCheckBox" value="Bike" />'
             + '</div>');
 }
 
@@ -35,3 +44,4 @@ SearchPercentComboViewFactory.setValue = function (view, value) {
 
 unsafeWindow.SearchButtonViewFactory = SearchButtonViewFactory;
 unsafeWindow.SearchPercentComboViewFactory = SearchPercentComboViewFactory;
+unsafeWindow.SearchCheckBoxViewFactory = SearchCheckBoxViewFactory;

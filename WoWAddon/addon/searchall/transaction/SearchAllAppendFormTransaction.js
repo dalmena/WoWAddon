@@ -3,7 +3,7 @@
     this.filterTransaction = new SearchAllFilterTransaction(this.storage);
 
     this.priceDiff = SearchPercentComboViewFactory.create('Price diff');
-    this.priceDiffselfRefresh = SearchCheckBoxViewFactory.create('Auto filter');
+    this.priceDiffSelfRefresh = SearchCheckBoxViewFactory.create('Auto filter');
     this.apply = SearchButtonViewFactory.create('APPLY', true);
     this.clear = SearchButtonViewFactory.create('Clear', false);
 
@@ -18,7 +18,7 @@ SearchAllAppendFormTransaction.prototype.execute = function () {
 
 SearchAllAppendFormTransaction.prototype.appendElements = function () {
     $('#browse-form').append(this.priceDiff);
-    $('#browse-form').append(this.priceDiffselfRefresh);
+    $('#browse-form').append(this.priceDiffSelfRefresh);
     $('#browse-form').append('<br />');
     $('#browse-form').append(this.apply);
     $('#browse-form').append(this.clear);
@@ -39,7 +39,9 @@ SearchAllAppendFormTransaction.prototype.setUpEvents = function () {
     });
 
     new WatchAuctionRefreshTransaction(function () {
-        that.filterTransaction.refresh();
+        if (that.priceDiffSelfRefresh.find('input').is(':checked')) {
+            that.filterTransaction.execute();
+        }
     }).execute();
 }
 

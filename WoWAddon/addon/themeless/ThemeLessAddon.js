@@ -1,8 +1,8 @@
 ﻿
 var ThemeLessAddon = function () {
-    this.themeLessStorage = new ThemeLessStorage();
-    this.summaryView = null;
+    this.storage = new ThemeLessStorage();
     this.applyVisualTransaction = null;
+    this.setupDefaultSettings();
 }
 
 ThemeLessAddon.prototype.execute = function() {
@@ -13,38 +13,33 @@ ThemeLessAddon.prototype.execute = function() {
 ThemeLessAddon.prototype.createSummary = function(){
     if (Auction.page == 'overview') {
         var that = this;
-
-        var summary = this.getConfig();
-        this.summaryView = new CreateNewThemeLessSummaryTransaction(summary).execute();
+        var summary = new CreateNewThemeLessSummaryTransaction(this.storage).execute();
         
-        ThemeLessSummaryViewFactory.onTurnChange(this.summaryView, function (isTurnedOn) {
-            summary.isTurnedOn = isTurnedOn;
-            that.setConfig(summary);
+        summary.onChange('turn', function (isTurnedOn) {
             that.applyVisual();
         });
     }
 }
 
 ThemeLessAddon.prototype.applyVisual = function(){
-    var config = this.getConfig();
+    var storedSummary = this.storage.get('summary');
 
-    if (config.isTurnedOn && this.applyVisualTransaction == null)
+    if (storedSummary.isTurnedOn && this.applyVisualTransaction == null)
         this.applyVisualTransaction = new ApplyThemeLessTransaction();
 
     if (this.applyVisualTransaction != null) {
-        if (config.isTurnedOn)
+        if (storedSummary.isTurnedOn)
             this.applyVisualTransaction.execute();
         else 
             this.applyVisualTransaction.reverse();
     }
 }
 
-ThemeLessAddon.prototype.getConfig = function () {
-    return this.themeLessStorage.get('map', new ThemeLessSummaryData('Theme Less Addon', false));
-}
+ThemeLessAddon.prototype.setupDefaultSettings = function () {
+    var storedSummary = this.storage.get('summary');
 
-ThemeLessAddon.prototype.setConfig = function (config) {
-    return this.themeLessStorage.set('map', config);
+    if (storedSummary == null)
+        this.storage.set('summary', new ThemeLessSummaryData('Theme Less Addon', false));
 }
 
 unsafeWindow.ThemeLessAddon = ThemeLessAddon;

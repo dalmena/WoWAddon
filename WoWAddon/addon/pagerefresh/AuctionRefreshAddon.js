@@ -11,15 +11,7 @@ AuctionRefreshAddon.prototype.execute = function () {
 
 AuctionRefreshAddon.prototype.createSummary = function () {
     if (Auction.page == 'overview') {
-        var that = this;
-
-        var summary = this.summaryStorage.get('summary');
-        this.summaryView = new CreateNewAuctionRefreshSummaryTransaction(summary).execute();
-        
-        AuctionRefreshSummaryViewFactory.onDelayChange(this.summaryView, function (refreshTime) {
-            summary.refreshTime = refreshTime;
-            that.summaryStorage.set('summary', summary);
-        });
+        new CreateNewAuctionRefreshSummaryTransaction(this.summaryStorage).execute();
     }
 }
 

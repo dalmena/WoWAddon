@@ -70,7 +70,6 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js
-// @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\AutoRetrieveAuctionInformation.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\storage\AuctionInfoStorage.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\data\AuctionInfo.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\config\client\AllAddonClient.js

@@ -16,8 +16,25 @@ SearchAllFilterTransaction.prototype.execute = function () {
 
     var allAuctionViews = new AuctionMappingTransaction(new SearchAllMapper()).execute();
 
+    //console.log(allAuctionViews);
+
     for (var i = 0; i < allAuctionViews.length; i++) {
+
         var view = allAuctionViews[i];
+
+        var transaction = new RetrieveAuctionItemInformationTransaction(view.itemTypeCode, view.query, function (auctionInfo) {
+            //console.log(auctionInfo);
+            if (auctionInfo.sellPrice.money > view.buyout && view.buyout > 0) {
+                //console.log(auctionInfo);
+                //console.log(view);
+                $('#auction-' + view.code + ' td').css("background-color", "#000033");
+            }
+            else if (auctionInfo.sellPrice.money > view.bid && view.bid > 0) {
+                $('#auction-' + view.code + ' td').css("background-color", "#003333");
+            }
+        });
+
+        transaction.execute();
 
         // reset data
         $('#auction-' + view.code).css("display", "table-row");

@@ -59,7 +59,6 @@
   <ItemGroup>
     <Content Include="addon\auctioninfo\data\AuctionInfo.js" />
     <Content Include="addon\auctioninfo\storage\AuctionInfoStorage.js" />
-    <Content Include="addon\auctioninfo\transaction\AutoRetrieveAuctionInformation.js" />
     <Content Include="addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js" />
     <Content Include="addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js" />
     <Content Include="addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js" />

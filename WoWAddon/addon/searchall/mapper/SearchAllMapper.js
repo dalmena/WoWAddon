@@ -12,13 +12,10 @@ SearchAllMapper.getValue = function (view, container) {
 }
 
 SearchAllMapper.prototype.map = function (view) {
-    var item = new AuctionItem();
+    var item = AuctionItemMapper.prototype.map.call(this, view); // calls super map function
 
-    item.code = view.attr('id').replace('auction-', '');
-    item.name = view.find('.item a strong').text();
-    item.timeLeft = view.find('.time span').text();
+
     item.bid = SearchAllMapper.getValue(view, 'price-bid');
-
     item.buyout = SearchAllMapper.getValue(view, 'price-buyout');
 
     if (item.buyout > 0) {

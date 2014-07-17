@@ -67,6 +67,12 @@
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\pagerefresh\AuctionRefreshAddon.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\fastbid\FastBidAddon.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\view\CustomSummaryTextField.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\view\CustomSummaryRadioList.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\view\CustomSummaryPanel.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\view\CustomSummaryLayout.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\transaction\CreateNewCustomSummaryTransaction.js
+// @require    file://C:\dev\WoWAddon\WoWAddon\addon\customsummary\data\CustomSummary.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js
 // @require    file://C:\dev\WoWAddon\WoWAddon\addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js

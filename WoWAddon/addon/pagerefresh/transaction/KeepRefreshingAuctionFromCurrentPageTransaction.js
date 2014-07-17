@@ -4,6 +4,7 @@
     var that = this;
 
     this.refreshCurrentAuctionsTransaction = new RefreshAuctionFromCurrentPageTransaction(function () {
+        AuctionRefreshEvents.fire(AuctionRefreshEvents.onRefresh);
         that.keepRefreshing();
     });
 }
@@ -18,7 +19,6 @@ KeepRefreshingAuctionFromCurrentPageTransaction.prototype.keepRefreshing = funct
 
     setTimeout(function () {
         that.refreshCurrentAuctionsTransaction.execute();
-        AuctionRefreshEvents.fire(AuctionRefreshEvents.onRefresh);
     }, refreshTime);
 }
 

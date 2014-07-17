@@ -62,6 +62,12 @@
     <Content Include="addon\auctioninfo\transaction\ExtractLoadedAuctionItemInformationTransaction.js" />
     <Content Include="addon\auctioninfo\transaction\LoadAuctionItemInformationTransaction.js" />
     <Content Include="addon\auctioninfo\transaction\RetrieveAuctionItemInformationTransaction.js" />
+    <Content Include="addon\customsummary\data\CustomSummary.js" />
+    <Content Include="addon\customsummary\transaction\CreateNewCustomSummaryTransaction.js" />
+    <Content Include="addon\customsummary\view\CustomSummaryLayout.js" />
+    <Content Include="addon\customsummary\view\CustomSummaryPanel.js" />
+    <Content Include="addon\customsummary\view\CustomSummaryRadioList.js" />
+    <Content Include="addon\customsummary\view\CustomSummaryTextField.js" />
     <Content Include="addon\fastbid\FastBidAddon.js" />
     <Content Include="addon\fastbid\transaction\ReplaceOpenBidDialogTransaction.js" />
     <Content Include="addon\pagerefresh\AuctionRefreshAddon.js" />

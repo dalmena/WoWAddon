@@ -24,4 +24,17 @@ CustomSummary.prototype.onChange = function (id, callback) {
     return this;
 }
 
+CustomSummary.prototype.onAnyChange = function (callback) {
+    for (var id in this.fields) {
+        var event = (function (id) { 
+            return function (value) {
+                callback(id, value);
+            };
+        })(id);
+
+        this.onChange(id, event);
+    }
+}
+
+
 unsafeWindow.CustomSummary = CustomSummary;

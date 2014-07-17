@@ -13,9 +13,13 @@ ExtractLoadedAuctionItemInformationTransaction.prototype.execute = function () {
 }
 
 ExtractLoadedAuctionItemInformationTransaction.prototype.extractSellPrice = function () {
-    var gold = $('.icon-gold', this.document);
-    var silver = $('.icon-silver', this.document);
-    var copper = $('.icon-copper', this.document);
+    var itemSpec = $('li', this.document).filter(function () {
+        return $(this).text().indexOf('Sell Price:') != -1;
+    });
+
+    var gold = $('.icon-gold', itemSpec);
+    var silver = $('.icon-silver', itemSpec);
+    var copper = $('.icon-copper', itemSpec);
 
     var price = {
         gold: gold.length > 0 ? parseInt(gold.text(), 10) : 0,
